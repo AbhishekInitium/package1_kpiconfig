@@ -1,0 +1,8 @@
+applications:
+- name: icm-admin-kpi-configurator
+  memory: 256M
+  buildpack: nodejs_buildpack
+  command: node server.js
+  path: dist
+  env:
+    NODE_ENV: production

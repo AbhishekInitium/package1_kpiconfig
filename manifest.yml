@@ -1,8 +1,7 @@
 applications:
 - name: icm-admin-kpi-configurator
   memory: 256M
-  buildpack: nodejs_buildpack
-  command: node server.js
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
   path: dist
   env:
     NODE_ENV: production
